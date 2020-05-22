@@ -1,0 +1,70 @@
+.game_wrapper{
+    position: relative;
+    height: 100%;
+    perspective: 500px;
+    .mine_field{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotateX(45deg);
+        
+        .tr{
+
+            height: 40px;
+            display: flex;
+            margin-bottom: 10px;
+            &:last-of-type{
+                border: none;
+            }
+            .td{
+                cursor: pointer;
+                border-radius: 4px;
+                height: 40px;
+                margin-right: 10px;
+                width: 40px;
+  
+                border: 1px solid #333;
+                text-align: center;
+                line-height: 38px;
+                box-shadow: 1px 1px 1px #333;
+                .null{
+                    display: block;
+                    height: 100%;
+                    border-radius: 4px;  
+                }
+                .used{
+                    display: block;
+                    height: 100%;
+                    border-radius: 4px;
+                    background-color: #ccc;
+                }
+                .icon_flag{
+                    vertical-align: middle;
+                    width: 24px;
+                    height: 24px;
+                }
+                .icon_mine{
+                    vertical-align: middle;
+                    width: 24px;
+                    height: 24px;
+                }
+                .icon_question{
+                    vertical-align: middle;
+                    width: 24px;
+                    height: 24px;
+                }
+                .num{
+                    line-height: 38px;
+                    border-radius: 4px;
+                    height: 100%;
+                    display: block;
+                    text-align: center;
+                    background-color: #ccc;
+                    -webkit-user-select: none;
+                }
+                
+            }
+        }
+    }
+}
+
